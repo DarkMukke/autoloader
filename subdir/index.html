@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deffer Js And Css - based on route and NS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery : needed before domReady -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- Deferred auto loading for js and css -->
+    <script type="text/javascript" src="/assets/App/Helper/Autoloader.js"></script>
+    <script>
+        var autoloader = new App.Helper.Autoloader('/assets', '/subdir/index');
+        autoloader.require('/App/layout');
+    </script>
+</head>
+<body>
+
+
+This is a page in a sub dir
+
+</body>
+</html>
